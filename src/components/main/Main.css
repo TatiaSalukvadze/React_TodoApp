@@ -1,0 +1,123 @@
+:root{
+    --bgbox:#fff;
+    --create: #9495A5;
+    --listc: #494C6B;
+    --boxsh:rgba(194, 195, 214, 0.50);
+    --border:#E3E4F1;
+    --bot:#9495A5;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+}
+.box{
+    width: 327px;
+        min-height: 48px;
+        border-radius: 5px;
+            background: var(--bgbox);
+            box-shadow: 0px 35px 50px -15px var(--boxsh);
+            display:flex;
+            align-items: center;
+            padding:20px;
+}
+.item {
+    border-bottom: 1px solid var(--border);
+    color: var(--listc);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.167px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+}
+.d {
+    --bgbox: #fff;
+        --create: #9495A5;
+        --listc: #494C6B;
+        --boxsh: rgba(194, 195, 214, 0.50);
+        --border: #E3E4F1;
+        --bot: #9495A5;
+ 
+}
+
+.main:not(.d) {
+    --bgbox: #25273D;
+        --create: #767992;
+        --listc: #C8CBE7;
+        --boxsh: rgba(0, 0, 0, 0.50);
+        --border: #393A4B;
+        --bot: #5B5E7E;
+}
+.create{
+   all:unset;
+   border:none;
+color: var(--listc);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.167px;
+}
+.create::placeholder{
+color:var(--create);
+}
+.bottom{
+    display:flex;
+    justify-content: space-between;
+    /* padding:20px; */
+    color: var(--bot);
+        text-align: right;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.167px;
+        /* background: var(--bgbox); */
+}
+
+.third{
+    display:flex;
+    justify-content: space-around;
+    color: var(--bot);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.194px;
+}
+
+.active{
+    color: #3A7CFD;
+}
+
+.item:hover,button:hover{
+    cursor: pointer;
+}
+
+@media (min-width:1000px){
+    .main {
+            gap: 24px;
+        }
+    
+        .box {
+            width: 540px;
+            min-height: 64px;
+            border-radius: 5px;
+            padding: 24px;
+        }
+    
+    
+        .item,.create,.bottom {
+            font-size: 18px;
+            letter-spacing: -0.25px;
+        }
+    
+        .third {
+            display: flex;
+            justify-content: space-between;
+           width:166px;
+            margin-bottom: 0px;
+            padding:0;
+        }
+        .bottom{
+            padding-top:0;
+            padding-bottom: 0;
+        }
+   
+}

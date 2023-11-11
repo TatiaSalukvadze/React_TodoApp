@@ -1,0 +1,38 @@
+
+.innert{
+    display:flex;
+    justify-content: space-between;
+    width:327px;
+    margin-top:48px;
+    margin-bottom:40px;
+}
+.innert h1{
+color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+.innert img{
+    height:20px;
+}
+button{
+    all:unset;
+}
+
+@media (min-width:1000px) {
+    .innert {
+            width: 541px;
+            margin-top: 70px;
+            margin-bottom: 48px;
+        }
+    
+        .innert h1 {
+        font-size: 40px;
+            letter-spacing: 15px;
+        }
+    
+        .innert img {
+            height: 26px;
+        }
+    
+}
